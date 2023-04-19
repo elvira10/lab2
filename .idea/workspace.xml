@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de60b634-56c8-4fba-aad6-57d50bfd0d5f" name="Changes" comment="implementing the size method by returning the size variable" />
+    <list default="true" id="de60b634-56c8-4fba-aad6-57d50bfd0d5f" name="Changes" comment="implementing the contains method" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681921493973</updated>
-      <workItem from="1681921495081" duration="2902000" />
+      <workItem from="1681921495081" duration="3216000" />
     </task>
     <task id="LOCAL-00001" summary="new class MyArrayList that implements the List interface">
       <created>1681921670124</created>
@@ -108,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681924368609</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="implementing the clear method">
+      <created>1681924505620</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681924505620</updated>
+    </task>
+    <task id="LOCAL-00010" summary="implementing the contains method">
+      <created>1681924696934</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681924696934</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +136,8 @@
     <MESSAGE value="implementing the get method by returning the element at the specified index" />
     <MESSAGE value="implementing the remove method" />
     <MESSAGE value="implementing the size method by returning the size variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing the size method by returning the size variable" />
+    <MESSAGE value="implementing the clear method" />
+    <MESSAGE value="implementing the contains method" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing the contains method" />
   </component>
 </project>
