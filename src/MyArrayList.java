@@ -63,9 +63,14 @@ public class MyArrayList implements MyList{
 
     @Override
     public Object get(int index) {
-        return null;
+        checkIndex(index);
+        return arr[index];
     }
-
+    private void checkIndex(int index){
+        if (index<0 || index>=size){
+            throw new IndexOutOfBoundsException();
+        }
+    }
     @Override
     public int indexOf(Object o) {
         return 0;
