@@ -14,6 +14,11 @@ public class MyArrayList implements MyList{
 
     @Override
     public boolean contains(Object o) {
+        for (int i=0; i<size; i++){
+            if (arr[i].equals(0)){
+                return true;
+            }
+        }
         return false;
     }
 
