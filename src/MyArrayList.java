@@ -48,12 +48,18 @@ public class MyArrayList implements MyList{
 
     @Override
     public boolean remove(Object item) {
-        return false;
+        remove(indexOf(item));
+        return true;
     }
 
     @Override
     public Object remove(int index) {
-        return null;
+        Object temporary = get(index);
+        for (int i = index + 1; i < size; i++) {
+            arr[i - 1] = arr[i];
+        }
+        size--;
+        return temporary;
     }
 
     @Override
