@@ -64,7 +64,8 @@ public class MyArrayList implements MyList{
 
     @Override
     public void clear() {
-
+        this.arr = new Object[arr.length];
+        this.size = 0;
     }
 
     @Override
