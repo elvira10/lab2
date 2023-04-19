@@ -3,14 +3,19 @@ public class MyLinkedList<T> implements MyList{
         private T element;
         private Node next;
         private Node previous;
-        private Node head;
-        private Node tail;
-        private int size;
         public Node(T element, Node next, Node previous) {
             this.element = element;
             this.next = next;
             this.previous = previous;
         }
+    }
+    private Node head;
+    private Node tail;
+    private int size;
+    public MyLinkedList() {
+        head = null;
+        tail = null;
+        size = 0;
     }
 
     @Override
