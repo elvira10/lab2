@@ -30,14 +30,44 @@ public class MyLinkedList<T> implements MyList{
 
     @Override
     public void add(Object item) {
-
+        Node newNode = new Node((T) item, null, tail);
+        if (tail==null){
+            head=newNode;
+        }
+        else {
+            tail.next=newNode;
+        }
+        tail=newNode;
+        size++;
     }
 
     @Override
     public void add(Object item, int index) {
-
+        checkIndex(index);
+        Node newNode = new Node((T) item, null, null);
+        if (index == size) {
+            if (tail == null) {
+                head = newNode;
+                tail = newNode;
+            }
+            else {
+                tail.next = newNode;
+                newNode.previous = tail;
+                tail = newNode;
+            }
+        }
+        size++;
     }
-
+    /**
+     * check if the index is valid
+     * @param index index that is going to be checked
+     * @throws IndexOutOfBoundsException if index is out of bounds
+     */
+    private void checkIndex(int index){
+        if (index<0 || index>=size){
+            throw new IndexOutOfBoundsException(); //throw exception if the index is out of bounds
+        }
+    }
     @Override
     public boolean remove(Object item) {
         return false;
