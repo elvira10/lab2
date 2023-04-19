@@ -1,4 +1,5 @@
 public class MyArrayList implements MyList{
+    private int[] arr;
     @Override
     public int size() {
         return 0;
