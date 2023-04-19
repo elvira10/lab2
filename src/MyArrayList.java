@@ -105,6 +105,6 @@ public class MyArrayList implements MyList{
 
     @Override
     public void sort() {
-
+        Arrays.sort(arr);
     }
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de60b634-56c8-4fba-aad6-57d50bfd0d5f" name="Changes" comment="implementing the contains method" />
+    <list default="true" id="de60b634-56c8-4fba-aad6-57d50bfd0d5f" name="Changes" comment="implementing the lastIndexOf method" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681921493973</updated>
-      <workItem from="1681921495081" duration="3216000" />
+      <workItem from="1681921495081" duration="3526000" />
     </task>
     <task id="LOCAL-00001" summary="new class MyArrayList that implements the List interface">
       <created>1681921670124</created>
@@ -122,7 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681924696934</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="implementing the indexOf method">
+      <created>1681924885155</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681924885155</updated>
+    </task>
+    <task id="LOCAL-00012" summary="implementing the lastIndexOf method">
+      <created>1681925017329</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1681925017329</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +152,8 @@
     <MESSAGE value="implementing the size method by returning the size variable" />
     <MESSAGE value="implementing the clear method" />
     <MESSAGE value="implementing the contains method" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing the contains method" />
+    <MESSAGE value="implementing the indexOf method" />
+    <MESSAGE value="implementing the lastIndexOf method" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing the lastIndexOf method" />
   </component>
 </project>
