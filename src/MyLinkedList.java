@@ -3,6 +3,7 @@ public class MyLinkedList<T> implements MyList{
         private T element;
         private Node next;
         private Node previous;
+        private Node head;
         public Node(T element, Node next, Node previous) {
             this.element = element;
             this.next = next;
