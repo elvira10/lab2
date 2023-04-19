@@ -5,6 +5,7 @@ public class MyLinkedList<T> implements MyList{
         private Node previous;
         private Node head;
         private Node tail;
+        private int size;
         public Node(T element, Node next, Node previous) {
             this.element = element;
             this.next = next;
