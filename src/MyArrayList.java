@@ -39,16 +39,15 @@ public class MyArrayList implements MyList{
      */
     @Override
     public void add(Object item) {
-        if (size==arr.length){
+        if (size==arr.length) {
             increaseBuffer(); //checking if the array is full, if true invoke increaseBuffer
         }
-        size++;
-        arr[size]=item; //adding the element to the end of the array
+        arr[size++]=item; //adding the element to the end of the array
     }
 
     private void increaseBuffer(){
         Object[] newArr = new Object[arr.length*2]; //new array with doubled size
-        for(int i=0; i< arr.length; i++){ //copying the existing elements to the new array
+        for(int i=0; i < arr.length; i++){ //copying the existing elements to the new array
             newArr[i]=arr[i];
         }
         arr = newArr; //setting the new array
@@ -61,11 +60,13 @@ public class MyArrayList implements MyList{
      */
     @Override
     public void add(Object item, int index) {
-        if (size() == arr.length)
-            increaseBuffer(); //checking if the array is full, if true invoke increaseBuffer
-        if (index > size)
+        checkIndex(index);
+        if (index > size || index < 0)
             throw new IndexOutOfBoundsException(); //check if the index is in bounds
-        for (int i = size; i > index; i--){
+        if (size() == arr.length) {
+            increaseBuffer(); //checking if the array is full, if true invoke increaseBuffer
+        }
+        for (int i = size-1; i > index; i--){
             arr[i] = arr[i - 1]; //moving the elements to make space for new ones
         }
         arr[index] = item; //inserting element at the given index
@@ -149,12 +150,12 @@ public class MyArrayList implements MyList{
     @Override
     public int lastIndexOf(Object o) {
         int index = -1; //index initializing
-        for (int i=0; i<size; i++){
-            if (arr[i].equals(o)){ //comparing each element with the object
-                return i; //if found return index
+        for (int i=0; i<size; i++) {
+            if (arr[i].equals(o)) { //comparing each element with the object
+                index = i; //storing i value in index variable
             }
         }
-        return -1; //if not found return -1
+        return index;
     }
 
     /**

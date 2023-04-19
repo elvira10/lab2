@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de60b634-56c8-4fba-aad6-57d50bfd0d5f" name="Changes" comment="implementing the sort method">
+    <list default="true" id="de60b634-56c8-4fba-aad6-57d50bfd0d5f" name="Changes" comment="including the comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyArrayList.java" afterDir="false" />
@@ -54,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681921493973</updated>
-      <workItem from="1681921495081" duration="7603000" />
+      <workItem from="1681921495081" duration="11090000" />
     </task>
     <task id="LOCAL-00001" summary="new class MyArrayList that implements the List interface">
       <created>1681921670124</created>
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681925098132</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="including the comments">
+      <created>1681929316150</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1681929316150</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +173,7 @@
     <MESSAGE value="implementing the indexOf method" />
     <MESSAGE value="implementing the lastIndexOf method" />
     <MESSAGE value="implementing the sort method" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing the sort method" />
+    <MESSAGE value="including the comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="including the comments" />
   </component>
 </project>
