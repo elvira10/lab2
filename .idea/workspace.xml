@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de60b634-56c8-4fba-aad6-57d50bfd0d5f" name="Changes" comment="implementing the contains method" />
+    <list default="true" id="de60b634-56c8-4fba-aad6-57d50bfd0d5f" name="Changes" comment="implementing the lastIndexOf method">
+      <change beforePath="$PROJECT_DIR$/src/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLinkedList.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +54,7 @@
       <updated>1681921493973</updated>
       <workItem from="1681921495081" duration="17430000" />
       <workItem from="1681946325393" duration="16000" />
-      <workItem from="1682019666268" duration="1302000" />
+      <workItem from="1682019666268" duration="1873000" />
     </task>
     <task id="LOCAL-00001" summary="new class MyArrayList that implements the List interface">
       <created>1681921670124</created>
@@ -236,7 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682026419728</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="implementing the indexOf method">
+      <created>1682026910998</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1682026910998</updated>
+    </task>
+    <task id="LOCAL-00028" summary="implementing the lastIndexOf method">
+      <created>1682027337844</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1682027337844</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,8 +265,6 @@
     <MESSAGE value="implementing the get method by returning the element at the specified index" />
     <MESSAGE value="implementing the size method by returning the size variable" />
     <MESSAGE value="implementing the clear method" />
-    <MESSAGE value="implementing the indexOf method" />
-    <MESSAGE value="implementing the lastIndexOf method" />
     <MESSAGE value="implementing the sort method" />
     <MESSAGE value="including the comments" />
     <MESSAGE value="fixing mistakes" />
@@ -265,6 +279,8 @@
     <MESSAGE value="implementing the remove method" />
     <MESSAGE value="implementing the size method" />
     <MESSAGE value="implementing the contains method" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing the contains method" />
+    <MESSAGE value="implementing the indexOf method" />
+    <MESSAGE value="implementing the lastIndexOf method" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing the lastIndexOf method" />
   </component>
 </project>
