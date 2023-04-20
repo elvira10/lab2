@@ -25,6 +25,13 @@ public class MyLinkedList<T> implements MyList{
 
     @Override
     public boolean contains(Object o) {
+        Node thisN = head;
+        while (thisN != null) {
+            if (thisN.element== o) {
+                return true;
+            }
+            thisN = thisN.next;
+        }
         return false;
     }
 

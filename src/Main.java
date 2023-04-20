@@ -25,5 +25,7 @@ public class Main {
         linkedList.add(36);
         System.out.println(linkedList.get(1));
         System.out.println(linkedList.remove(3));
+        System.out.println(linkedList.size());
+        System.out.println(linkedList.contains(5));
     }
 }
