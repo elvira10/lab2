@@ -70,13 +70,51 @@ public class MyLinkedList<T> implements MyList{
     }
     @Override
     public boolean remove(Object item) {
-        return false;
+        Node current = head;
+        Node previous = null;
+        boolean check = false;
+        while (current != null) {
+            if (current.element.equals(item)) {
+                check = true;
+                break;
+            }
+            previous = current;
+            current = current.next;
+        }
+        if (check) {
+            if (previous == null) {
+                head = current.next;
+            } else {
+                previous.next = current.next;
+            }
+            if (current == tail) {
+                tail = previous;
+            }
+            size--;
+        }
+        return check;
     }
 
     @Override
     public Object remove(int index) {
-        return null;
-    }
+            checkIndex(index);
+            Node current = head;
+            Node previous = null;
+            for (int i = 0; i < index; i++) {
+                previous = current;
+                current = current.next;
+            }
+            if (previous == null) {
+                head = current.next;
+            } else {
+                previous.next = current.next;
+            }
+            if (current == tail) {
+                tail = previous;
+            }
+            size--;
+            return current.element;
+        }
 
     @Override
     public void clear() {

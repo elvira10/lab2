@@ -17,5 +17,13 @@ public class Main {
         System.out.println(arrayList.indexOf(973));
         System.out.println(arrayList.remove(7));
         //arrayList.sort();
+
+        MyLinkedList linkedList = new MyLinkedList();
+        linkedList.add(54);
+        linkedList.add(876);
+        linkedList.add(5);
+        linkedList.add(36);
+        System.out.println(linkedList.get(1));
+        System.out.println(linkedList.remove(3));
     }
 }
