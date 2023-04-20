@@ -16,7 +16,7 @@ public class Main {
         System.out.println(arrayList.lastIndexOf(8));
         System.out.println(arrayList.indexOf(973));
         System.out.println(arrayList.remove(7));
-        //arrayList.sort();
+        arrayList.sort();
 
         MyLinkedList linkedList = new MyLinkedList();
         linkedList.add(54);

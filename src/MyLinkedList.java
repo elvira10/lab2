@@ -1,17 +1,20 @@
-public class MyLinkedList<T> implements MyList{
-    private class Node{
+public class MyLinkedList<T> implements MyList {
+    private class Node {
         private T element;
         private Node next;
         private Node previous;
+
         public Node(T element, Node next, Node previous) {
             this.element = element;
             this.next = next;
             this.previous = previous;
         }
     }
+
     private Node head;
     private Node tail;
     private int size;
+
     public MyLinkedList() {
         head = null;
         tail = null;
@@ -27,7 +30,7 @@ public class MyLinkedList<T> implements MyList{
     public boolean contains(Object o) {
         Node thisN = head;
         while (thisN != null) {
-            if (thisN.element== o) {
+            if (thisN.element == o) {
                 return true;
             }
             thisN = thisN.next;
@@ -38,13 +41,12 @@ public class MyLinkedList<T> implements MyList{
     @Override
     public void add(Object item) {
         Node newNode = new Node((T) item, null, tail);
-        if (tail==null){
-            head=newNode;
+        if (tail == null) {
+            head = newNode;
+        } else {
+            tail.next = newNode;
         }
-        else {
-            tail.next=newNode;
-        }
-        tail=newNode;
+        tail = newNode;
         size++;
     }
 
@@ -56,8 +58,7 @@ public class MyLinkedList<T> implements MyList{
             if (tail == null) {
                 head = newNode;
                 tail = newNode;
-            }
-            else {
+            } else {
                 tail.next = newNode;
                 newNode.previous = tail;
                 tail = newNode;
@@ -65,16 +66,19 @@ public class MyLinkedList<T> implements MyList{
         }
         size++;
     }
+
     /**
      * check if the index is valid
+     *
      * @param index index that is going to be checked
      * @throws IndexOutOfBoundsException if index is out of bounds
      */
-    private void checkIndex(int index){
-        if (index<0 || index>=size){
+    private void checkIndex(int index) {
+        if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException(); //throw exception if the index is out of bounds
         }
     }
+
     @Override
     public boolean remove(Object item) {
         Node current = head;
@@ -104,24 +108,24 @@ public class MyLinkedList<T> implements MyList{
 
     @Override
     public Object remove(int index) {
-            checkIndex(index);
-            Node current = head;
-            Node previous = null;
-            for (int i = 0; i < index; i++) {
-                previous = current;
-                current = current.next;
-            }
-            if (previous == null) {
-                head = current.next;
-            } else {
-                previous.next = current.next;
-            }
-            if (current == tail) {
-                tail = previous;
-            }
-            size--;
-            return current.element;
+        checkIndex(index);
+        Node current = head;
+        Node previous = null;
+        for (int i = 0; i < index; i++) {
+            previous = current;
+            current = current.next;
         }
+        if (previous == null) {
+            head = current.next;
+        } else {
+            previous.next = current.next;
+        }
+        if (current == tail) {
+            tail = previous;
+        }
+        size--;
+        return current.element;
+    }
 
     @Override
     public void clear() {
@@ -135,12 +139,11 @@ public class MyLinkedList<T> implements MyList{
         checkIndex(index);
         Node thisN;
         if (index < size / 2) {
-             thisN = head;
+            thisN = head;
             for (int i = 0; i < index; i++) {
                 thisN = thisN.next;
             }
-        }
-        else {
+        } else {
             thisN = tail;
             for (int i = size - 1; i > index; i--) {
                 thisN = thisN.previous;
@@ -180,6 +183,22 @@ public class MyLinkedList<T> implements MyList{
 
     @Override
     public void sort() {
-
+        Node current = head;
+        while (current != null) {
+            Node min = current;
+            Node inner = current.next;
+            while (inner != null) {
+                if (((Comparable<T>) inner.element).compareTo(min.element) < 0) {
+                    min = inner;
+                }
+                inner = inner.next;
+            }
+            if (min != current) {
+                T temp = current.element;
+                current.element = min.element;
+                min.element = temp;
+            }
+            current = current.next;
+        }
     }
 }

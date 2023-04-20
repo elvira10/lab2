@@ -1,16 +1,17 @@
 import java.util.Arrays;
 
-public class MyArrayList implements MyList{
+public class MyArrayList implements MyList {
     private Object[] arr; //for storing elements
     private int size; //variable to store size of an array
 
-    MyArrayList(){
+    MyArrayList() {
         this.arr = (Object[]) new Object[10]; // initializing the array
         this.size = 0; //set size to zero
     }
 
     /**
      * returns the size of an array
+     *
      * @return the size
      */
     @Override
@@ -20,13 +21,14 @@ public class MyArrayList implements MyList{
 
     /**
      * returns true if the elements is in the array
+     *
      * @param o the element that is going to be checked
      * @return true if it is in array, if not false
      */
     @Override
     public boolean contains(Object o) { //checking if the object contains the element
-        for (int i=0; i<size; i++){
-            if (arr[i].equals(o)){
+        for (int i = 0; i < size; i++) {
+            if (arr[i].equals(o)) {
                 return true;
             }
         }
@@ -35,27 +37,29 @@ public class MyArrayList implements MyList{
 
     /**
      * adds the element to the end of the array
+     *
      * @param item the element that is going to be added
      */
     @Override
     public void add(Object item) {
-        if (size==arr.length) {
+        if (size == arr.length) {
             increaseBuffer(); //checking if the array is full, if true invoke increaseBuffer
         }
-        arr[size++]=item; //adding the element to the end of the array
+        arr[size++] = item; //adding the element to the end of the array
     }
 
-    private void increaseBuffer(){
-        Object[] newArr = new Object[arr.length*2]; //new array with doubled size
-        for(int i=0; i < arr.length; i++){ //copying the existing elements to the new array
-            newArr[i]=arr[i];
+    private void increaseBuffer() {
+        Object[] newArr = new Object[arr.length * 2]; //new array with doubled size
+        for (int i = 0; i < arr.length; i++) { //copying the existing elements to the new array
+            newArr[i] = arr[i];
         }
         arr = newArr; //setting the new array
     }
 
     /**
      * adds the element at the specified index
-     * @param item the element that is going to be added
+     *
+     * @param item  the element that is going to be added
      * @param index position of the element where it is going to be added
      */
     @Override
@@ -66,7 +70,7 @@ public class MyArrayList implements MyList{
         if (size() == arr.length) {
             increaseBuffer(); //checking if the array is full, if true invoke increaseBuffer
         }
-        for (int i = size-1; i > index; i--){
+        for (int i = size - 1; i > index; i--) {
             arr[i] = arr[i - 1]; //moving the elements to make space for new ones
         }
         arr[index] = item; //inserting element at the given index
@@ -75,6 +79,7 @@ public class MyArrayList implements MyList{
 
     /**
      * removes the first occurrence of the element from array
+     *
      * @param item the element that is going to be removed
      * @return true if it was removed, false otherwise
      */
@@ -86,6 +91,7 @@ public class MyArrayList implements MyList{
 
     /**
      * removes the element at the specified index
+     *
      * @param index the element that is going to be removed
      * @return the removed element
      */
@@ -108,6 +114,7 @@ public class MyArrayList implements MyList{
 
     /**
      * get the element at the specified index
+     *
      * @param index the element that is going to be retrieved
      * @return the element
      */
@@ -119,38 +126,41 @@ public class MyArrayList implements MyList{
 
     /**
      * check if the index is valid
+     *
      * @param index index that is going to be checked
      * @throws IndexOutOfBoundsException if index is out of bounds
      */
-    private void checkIndex(int index){
-        if (index<0 || index>=size){
+    private void checkIndex(int index) {
+        if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException(); //throw exception if the index is out of bounds
         }
     }
 
     /**
      * get the index of the first occurrence of the object
+     *
      * @param o object that is going to be checked
      * @return the index if it was found, if not return -1
      */
     @Override
     public int indexOf(Object o) {
-            for (int i = 0; i < size; i++) {
-                if (arr[i].equals(o)) //comparing each element with the object
-                    return i; //if found return the index
-            }
-            return -1; //if not return -1
+        for (int i = 0; i < size; i++) {
+            if (arr[i].equals(o)) //comparing each element with the object
+                return i; //if found return the index
+        }
+        return -1; //if not return -1
     }
 
     /**
      * get the index of the last occurrence of the object
+     *
      * @param o object that is going to be checked
      * @return the index of found, if not return -1
      */
     @Override
     public int lastIndexOf(Object o) {
         int index = -1; //index initializing
-        for (int i=0; i<size; i++) {
+        for (int i = 0; i < size; i++) {
             if (arr[i].equals(o)) { //comparing each element with the object
                 index = i; //storing i value in index variable
             }
@@ -163,6 +173,14 @@ public class MyArrayList implements MyList{
      */
     @Override
     public void sort() {
-        Arrays.sort(arr); //sort the array
+        for (int i = 0; i < size; i++) {
+            for (int j = i; j < size; j++) {
+                if ((int) arr[j] < (int) arr[i]) {
+                    Object temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
     }
 }
