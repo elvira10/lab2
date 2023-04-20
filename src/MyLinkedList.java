@@ -125,7 +125,9 @@ public class MyLinkedList<T> implements MyList{
 
     @Override
     public void clear() {
-
+        size = 0;
+        head = null;
+        tail = null;
     }
 
     @Override
@@ -149,7 +151,16 @@ public class MyLinkedList<T> implements MyList{
 
     @Override
     public int indexOf(Object o) {
-        return 0;
+        int index = 0;
+        Node current = head;
+        while (current != null) {
+            if (current.element.equals(o)) {
+                return index;
+            }
+            current = current.next;
+            index++;
+        }
+        return -1;
     }
 
     @Override
