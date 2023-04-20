@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de60b634-56c8-4fba-aad6-57d50bfd0d5f" name="Changes" comment="implementing the lastIndexOf method">
+    <list default="true" id="de60b634-56c8-4fba-aad6-57d50bfd0d5f" name="Changes" comment="testing methods of mylinkedlist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +55,7 @@
       <updated>1681921493973</updated>
       <workItem from="1681921495081" duration="17430000" />
       <workItem from="1681946325393" duration="16000" />
-      <workItem from="1682019666268" duration="2671000" />
+      <workItem from="1682019666268" duration="5492000" />
     </task>
     <task id="LOCAL-00001" summary="new class MyArrayList that implements the List interface">
       <created>1681921670124</created>
@@ -262,7 +260,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682027383619</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="implementing the sort method of arraylist">
+      <created>1682028173868</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1682028173868</updated>
+    </task>
+    <task id="LOCAL-00031" summary="testing methods of mylinkedlist">
+      <created>1682028275419</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1682028275419</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +303,8 @@
     <MESSAGE value="implementing the contains method" />
     <MESSAGE value="implementing the indexOf method" />
     <MESSAGE value="implementing the lastIndexOf method" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing the lastIndexOf method" />
+    <MESSAGE value="implementing the sort method of arraylist" />
+    <MESSAGE value="testing methods of mylinkedlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing methods of mylinkedlist" />
   </component>
 </project>
