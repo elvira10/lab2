@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de60b634-56c8-4fba-aad6-57d50bfd0d5f" name="Changes" comment="testing methods of mylinkedlist">
+    <list default="true" id="de60b634-56c8-4fba-aad6-57d50bfd0d5f" name="Changes" comment="including comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,9 @@
       <updated>1681921493973</updated>
       <workItem from="1681921495081" duration="17430000" />
       <workItem from="1681946325393" duration="16000" />
-      <workItem from="1682019666268" duration="5492000" />
+      <workItem from="1682019666268" duration="5762000" />
+      <workItem from="1682091069079" duration="882000" />
+      <workItem from="1682561087368" duration="4018000" />
     </task>
     <task id="LOCAL-00001" summary="new class MyArrayList that implements the List interface">
       <created>1681921670124</created>
@@ -274,11 +279,29 @@
       <option name="project" value="LOCAL" />
       <updated>1682028275419</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="including comments">
+      <created>1682031254400</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1682031254400</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new class MyArrayList that implements the List interface" />
@@ -305,6 +328,7 @@
     <MESSAGE value="implementing the lastIndexOf method" />
     <MESSAGE value="implementing the sort method of arraylist" />
     <MESSAGE value="testing methods of mylinkedlist" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing methods of mylinkedlist" />
+    <MESSAGE value="including comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="including comments" />
   </component>
 </project>

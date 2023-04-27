@@ -1,6 +1,5 @@
-import java.util.Arrays;
-
 public class MyArrayList implements MyList {
+    private static int sublist;
     private Object[] arr; //for storing elements
     private int size; //variable to store size of an array
 
@@ -119,7 +118,7 @@ public class MyArrayList implements MyList {
      * @return the element
      */
     @Override
-    public Object get(int index) {
+    public static Object get(int index) {
         checkIndex(index); //checking the index
         return arr[index]; //returning the element
     }
@@ -183,4 +182,22 @@ public class MyArrayList implements MyList {
             }
         }
     }
+
+    @Override
+    public void sublist(){
+        Object[] newArray = new Object[size];
+        for (int i=0; i<size; i++){
+            return;
+        }
+    }
+
+    @Override
+    public int sublist (int index, int size) {
+        Object[] newArray = new Object[size];
+        for (int i=0; i<size; i++){
+            MyArrayList.sublist.get(i);
+        }
+        return sublist;
+    }
+
 }

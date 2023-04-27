@@ -260,4 +260,14 @@ public class MyLinkedList<T> implements MyList {
             current = current.next; // move to the next node in the list
         }
     }
+
+    @Override
+    public int sublist(int index, int size) {
+        return 0;
+    }
+
+    @Override
+    public void sublist(){
+        return;
+    }
 }

@@ -10,22 +10,23 @@ public class Main {
         arrayList.add(404);
         arrayList.add(8);
         arrayList.add(26);
-        System.out.println(arrayList.get(7));
-        System.out.println(arrayList.size());
-        System.out.println(arrayList.contains(500));
-        System.out.println(arrayList.lastIndexOf(8));
-        System.out.println(arrayList.indexOf(973));
-        System.out.println(arrayList.remove(7));
-        arrayList.sort();
+        //System.out.println(arrayList.get(7));
+        //System.out.println(arrayList.size());
+        //System.out.println(arrayList.contains(500));
+        //System.out.println(arrayList.lastIndexOf(8));
+        //System.out.println(arrayList.indexOf(973));
+        //System.out.println(arrayList.remove(7));
+        //arrayList.sort();
+        System.out.println(arrayList.sublist(3, 9));
 
         MyLinkedList linkedList = new MyLinkedList();
         linkedList.add(54);
         linkedList.add(876);
         linkedList.add(5);
         linkedList.add(36);
-        System.out.println(linkedList.get(1));
-        System.out.println(linkedList.remove(3));
-        System.out.println(linkedList.size());
-        System.out.println(linkedList.contains(5));
+        //System.out.println(linkedList.get(1));
+        //System.out.println(linkedList.remove(3));
+        //System.out.println(linkedList.size());
+        //System.out.println(linkedList.contains(5));
     }
 }

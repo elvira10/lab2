@@ -10,4 +10,6 @@ public interface MyList<T> {
         int indexOf(Object o);
         int lastIndexOf(Object o);
         void sort();
-    }
+        int sublist(int index, int size);
+    void sublist();
+}
